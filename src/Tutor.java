@@ -2,5 +2,10 @@ public class Tutor {
 
     String nome;
 
-    String telefone;
+    Integer telefone;
+
+    Tutor(String nome, Integer telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+    }
 }
