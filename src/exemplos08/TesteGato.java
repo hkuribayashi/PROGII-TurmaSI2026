@@ -1,3 +1,5 @@
+import exemplos08.Gato;
+import exemplos08.Tutor;
 
 void main(){
     Gato x = new Gato("Sushi");
