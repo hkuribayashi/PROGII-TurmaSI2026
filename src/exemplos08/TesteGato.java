@@ -16,4 +16,7 @@ void main(){
     Gato z = new Gato("Luke", "Joana", 29832);
     IO.println(z.tutor.nome);
 
+    Gato k = new Gato("Luke", 10, false);
+    IO.println(k.tutor.nome);
+
 }
