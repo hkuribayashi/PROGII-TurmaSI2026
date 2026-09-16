@@ -2,9 +2,9 @@ package exemplos0903;
 
 public class Conta {
 
-    public String agencia;
-    public String numero;
-    public String titular;
+    private String agencia;
+    private String numero;
+    private String titular;
     private Double saldo;
 
     public Conta(String agencia, String numero, String titular){
@@ -31,5 +31,33 @@ public class Conta {
 
     public Double getSaldo(){
         return this.saldo;
+    }
+
+    public String getAgencia(){
+        return this.agencia;
+    }
+
+    public String getNumero(){
+        return this.numero;
+    }
+
+    public String getTitular(){
+        return this.titular;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
     }
 }
