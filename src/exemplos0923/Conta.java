@@ -1,13 +1,13 @@
-package exemplos0917;
+package exemplos0923;
 
 public class Conta {
 
     private String agencia;
     private String numero;
-    private String titular;
+    private Cliente titular;
     private Double saldo;
 
-    public Conta(String agencia, String numero, String titular){
+    public Conta(String agencia, String numero, Cliente titular){
         this.validarAgencia(agencia);
         this.agencia = agencia;
         this.numero = numero;
@@ -48,7 +48,19 @@ public class Conta {
         return this.numero;
     }
 
-    public String getTitular(){
+    public Cliente getTitular(){
         return this.titular;
+    }
+
+    public void setTitular(Cliente titular){
+        this.titular = titular;
+    }
+
+    public void setAgencia(String agencia){
+        this.agencia = agencia;
+    }
+
+    public void setNumero(String numero){
+        this.numero = numero;
     }
 }
