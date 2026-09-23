@@ -2,16 +2,23 @@ package exemplos0917;
 
 public class Conta {
 
-    public String agencia;
-    public String numero;
-    public String titular;
-    public Double saldo;
+    private String agencia;
+    private String numero;
+    private String titular;
+    private Double saldo;
 
     public Conta(String agencia, String numero, String titular){
+        this.validarAgencia(agencia);
         this.agencia = agencia;
         this.numero = numero;
         this.titular = titular;
         this.saldo = 0.0;
+    }
+
+    private void validarAgencia(String agencia){
+        String[] partes = agencia.split("-");
+        if (partes[0].length() != 4 || partes[1].length() != 1)
+            throw new RuntimeException("Erro: Agência Inválida!");
     }
 
     public void sacar(Double valor){
@@ -27,6 +34,22 @@ public class Conta {
     public void depositar(Double valor){
         if (valor > 0)
             this.saldo += valor;
+    }
+
+    public Double getSaldo(){
+        return this.saldo;
+    }
+
+    public String getAgencia(){
+        return this.agencia;
+    }
+
+    public String getNumero(){
+        return this.numero;
+    }
+
+    public String getTitular(){
+        return this.titular;
     }
 
 }
