@@ -1,3 +1,4 @@
+import exemplos0924.Diretor;
 import exemplos0924.Funcionario;
 import exemplos0924.Gerente;
 
@@ -11,6 +12,9 @@ void main(){
 
     Funcionario k = new Gerente("Gabriel", 1000.0, "TI");
     IO.println( k.calcularBonificacao() );
+
+    Diretor d = new Diretor("Maria", 1000.0);
+    IO.println( d.calcularBonificacao() );
 
 
 }

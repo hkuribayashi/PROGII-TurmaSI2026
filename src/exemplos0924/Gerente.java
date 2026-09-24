@@ -12,6 +12,7 @@ public class Gerente extends Funcionario{
     /**
      * @return 12% do valor do salario
      */
+    @Override
     public Double calcularBonificacao(){
         return this.salario * 0.12;
     }
