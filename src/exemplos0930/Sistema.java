@@ -1,8 +1,9 @@
-import exemplos0930.Funcionario;
+import exemplos0930.Diretor;
+import exemplos0930.Gerente;
 
 void main(){
 
-    Funcionario f = new Funcionario("Hugo", 1000.0);
+    Gerente f = new Gerente("Hugo", 1000.0, "Vendas");
     IO.println(f);
 
 }

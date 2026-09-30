@@ -40,4 +40,11 @@ public class Funcionario {
     public Double calcularBonificacao() {
         return this.salario * 0.1;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: "+this.nome+
+                "\nSalario: "+this.salario+
+                "\nBonificação: "+this.calcularBonificacao();
+    }
 }

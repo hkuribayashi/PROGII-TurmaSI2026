@@ -24,4 +24,9 @@ public class Gerente extends Funcionario{
     public Double calcularBonificacao(){
         return this.salario * 0.12;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + "\nDepartamento: " + this.departamento;
+    }
 }
