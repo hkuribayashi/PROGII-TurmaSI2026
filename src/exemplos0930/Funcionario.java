@@ -13,7 +13,7 @@ public class Funcionario {
 
     private void validarSalario(Double salario) {
         if (salario <= 0) {
-            throw new RuntimeException("Salario invalido");
+            throw new SalarioInvalidoException(salario.toString());
         }
     }
 
