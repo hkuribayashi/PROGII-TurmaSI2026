@@ -1,18 +1,16 @@
-package exemplos0924;
+package exemplos0930;
 
 public class Diretor extends Funcionario{
 
-    public Diretor(String nome, Double salario){
+    public Diretor(String nome, Double salario) {
         super(nome, salario);
     }
 
     /**
-     * @return 15% do salário
+     * @return Retorna 15% do salário
      */
     @Override
     public Double calcularBonificacao(){
-        //return super.calcularBonificacao() + (0.05 * this.salario);
         return this.salario * 0.15;
     }
-
 }
