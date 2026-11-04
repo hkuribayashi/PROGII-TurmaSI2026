@@ -27,6 +27,6 @@ public class Gerente extends Funcionario{
 
     @Override
     public String toString(){
-        return super.toString() + "\nDepartamento: " + this.departamento;
+        return super.toString() + "\nexemplos1104.Departamento: " + this.departamento;
     }
 }
